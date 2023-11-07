@@ -1,6 +1,12 @@
+import random
+word_list = ["banana", "apple", "plum", "grapefruit", "orange"]
+print(word_list)
+word = random.choice(word_list)
+print(word)
+
 def check_guess(guess): # checks if the letter is in the word
     guess = guess.lower()   # makes the letter lower case
-    if guess in "apple":    # checks if letter is in word
+    if guess in word:    # checks if letter is in word
         print(f"Good guess! {guess} is in the word.") # ends with correct guess
     else:
         print(f"Sorry, {guess} is not in the word. Try again.") # ends with incorrect guess
