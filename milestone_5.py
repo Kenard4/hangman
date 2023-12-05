@@ -36,7 +36,7 @@ class Hangman:
                 Hangman.check_guess(self, guess) # if it has got this far, call check_guess function with new letter
                 self.list_of_guesses.append(guess) # add the guessed letter to the list of letters that have been tried
                 print(self.list_of_guesses) # show the player what letters they have tried
-            return
+            
 # hang = Hangman(["banana", "apple", "plum", "grapefruit", "orange"], 3)
 # hang.ask_for_input()
 
